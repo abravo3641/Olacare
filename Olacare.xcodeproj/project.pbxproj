@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DFEA0922E068B50E9054CF5 /* Pods_Olacare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B23C920B6A9230827CB65F /* Pods_Olacare.framework */; };
+		4954341222445C3200C32656 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4954341122445C3200C32656 /* GoogleService-Info.plist */; };
 		49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C619CC22442B3C003FA1E5 /* AppDelegate.swift */; };
 		49C619CF22442B3C003FA1E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C619CE22442B3C003FA1E5 /* ViewController.swift */; };
 		49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D022442B3C003FA1E5 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BB1E18B9F5D437D67A85188 /* Pods-Olacare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olacare.release.xcconfig"; path = "Target Support Files/Pods-Olacare/Pods-Olacare.release.xcconfig"; sourceTree = "<group>"; };
+		4954341122445C3200C32656 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49C619C922442B3C003FA1E5 /* Olacare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olacare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C619CC22442B3C003FA1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C619CE22442B3C003FA1E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		49C619D322442B3E003FA1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C619D622442B3E003FA1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C619D822442B3E003FA1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC92288D13FA5CDCECAA9FC /* Pods-Olacare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olacare.debug.xcconfig"; path = "Target Support Files/Pods-Olacare/Pods-Olacare.debug.xcconfig"; sourceTree = "<group>"; };
+		E1B23C920B6A9230827CB65F /* Pods_Olacare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olacare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFEA0922E068B50E9054CF5 /* Pods_Olacare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				49C619CB22442B3C003FA1E5 /* Olacare */,
 				49C619CA22442B3C003FA1E5 /* Products */,
+				C757B52CE60B372DA615A152 /* Pods */,
+				DF06B7C92E3327DEDD77EF18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				49C619D322442B3E003FA1E5 /* Assets.xcassets */,
 				49C619D522442B3E003FA1E5 /* LaunchScreen.storyboard */,
 				49C619D822442B3E003FA1E5 /* Info.plist */,
+				4954341122445C3200C32656 /* GoogleService-Info.plist */,
 			);
 			path = Olacare;
+			sourceTree = "<group>";
+		};
+		C757B52CE60B372DA615A152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC92288D13FA5CDCECAA9FC /* Pods-Olacare.debug.xcconfig */,
+				0BB1E18B9F5D437D67A85188 /* Pods-Olacare.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF06B7C92E3327DEDD77EF18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1B23C920B6A9230827CB65F /* Pods_Olacare.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49C619DB22442B3E003FA1E5 /* Build configuration list for PBXNativeTarget "Olacare" */;
 			buildPhases = (
+				76104B335EC57F4A49391C1C /* [CP] Check Pods Manifest.lock */,
 				49C619C522442B3C003FA1E5 /* Sources */,
 				49C619C622442B3C003FA1E5 /* Frameworks */,
 				49C619C722442B3C003FA1E5 /* Resources */,
+				7B3F8BE969B5418984C85F85 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,66 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C619D722442B3E003FA1E5 /* LaunchScreen.storyboard in Resources */,
+				4954341222445C3200C32656 /* GoogleService-Info.plist in Resources */,
 				49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */,
 				49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76104B335EC57F4A49391C1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Olacare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B3F8BE969B5418984C85F85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Olacare/Pods-Olacare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Olacare/Pods-Olacare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49C619C522442B3C003FA1E5 /* Sources */ = {
@@ -280,6 +363,7 @@
 		};
 		49C619DC22442B3E003FA1E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC92288D13FA5CDCECAA9FC /* Pods-Olacare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +381,7 @@
 		};
 		49C619DD22442B3E003FA1E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB1E18B9F5D437D67A85188 /* Pods-Olacare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
