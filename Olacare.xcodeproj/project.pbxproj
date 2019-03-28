@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		0DFEA0922E068B50E9054CF5 /* Pods_Olacare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B23C920B6A9230827CB65F /* Pods_Olacare.framework */; };
 		4954341222445C3200C32656 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4954341122445C3200C32656 /* GoogleService-Info.plist */; };
+		495434142245AD6E00C32656 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495434132245AD6E00C32656 /* user.swift */; };
+		495434162245AF5F00C32656 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495434152245AF5F00C32656 /* LoginViewController.swift */; };
+		495434182245AF7400C32656 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495434172245AF7400C32656 /* signUpViewController.swift */; };
 		49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C619CC22442B3C003FA1E5 /* AppDelegate.swift */; };
-		49C619CF22442B3C003FA1E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C619CE22442B3C003FA1E5 /* ViewController.swift */; };
 		49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D022442B3C003FA1E5 /* Main.storyboard */; };
 		49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D322442B3E003FA1E5 /* Assets.xcassets */; };
 		49C619D722442B3E003FA1E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D522442B3E003FA1E5 /* LaunchScreen.storyboard */; };
@@ -19,9 +21,11 @@
 /* Begin PBXFileReference section */
 		0BB1E18B9F5D437D67A85188 /* Pods-Olacare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olacare.release.xcconfig"; path = "Target Support Files/Pods-Olacare/Pods-Olacare.release.xcconfig"; sourceTree = "<group>"; };
 		4954341122445C3200C32656 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		495434132245AD6E00C32656 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		495434152245AF5F00C32656 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		495434172245AF7400C32656 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		49C619C922442B3C003FA1E5 /* Olacare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olacare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C619CC22442B3C003FA1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49C619CE22442B3C003FA1E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49C619D122442B3C003FA1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49C619D322442B3E003FA1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C619D622442B3E003FA1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				49C619CC22442B3C003FA1E5 /* AppDelegate.swift */,
-				49C619CE22442B3C003FA1E5 /* ViewController.swift */,
+				495434132245AD6E00C32656 /* user.swift */,
+				495434152245AF5F00C32656 /* LoginViewController.swift */,
+				495434172245AF7400C32656 /* signUpViewController.swift */,
 				49C619D022442B3C003FA1E5 /* Main.storyboard */,
 				49C619D322442B3E003FA1E5 /* Assets.xcassets */,
 				49C619D522442B3E003FA1E5 /* LaunchScreen.storyboard */,
@@ -218,8 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C619CF22442B3C003FA1E5 /* ViewController.swift in Sources */,
+				495434162245AF5F00C32656 /* LoginViewController.swift in Sources */,
 				49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */,
+				495434182245AF7400C32656 /* signUpViewController.swift in Sources */,
+				495434142245AD6E00C32656 /* user.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
