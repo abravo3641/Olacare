@@ -8,22 +8,13 @@
 
 import Foundation
 
-class user {
-    let email:String!
-    let password:String!
-    let firstName:String!
-    let lastName:String!
-    let birthMonth:Int!
-    let birthDay:Int!
-    let birthYear:Int!
-    
-    init(email:String, password:String, firstName:String, lastName:String, birthMonth:Int, birthDay:Int, birthYear:Int) {
-        self.email = email
-        self.password = password
-        self.firstName = firstName
-        self.lastName = lastName
-        self.birthMonth = birthMonth
-        self.birthDay = birthDay
-        self.birthYear  = birthYear
-    }
+class userTemplate {
+    var email:String = ""
+    var password:String = ""
+    var firstName:String = ""
+    var lastName:String = ""
+    var birthMonth:Int = 0
+    var birthDay:Int = 0
+    var birthYear:Int = 0
+    var age:Int = 0
 }

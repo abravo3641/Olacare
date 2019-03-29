@@ -1,16 +1,7 @@
-//
-//  signUpViewController.swift
-//  Olacare
-//
-//  Created by Anthony Bravo on 3/22/19.
-//  Copyright © 2019 Anthony Bravo. All rights reserved.
-//
 
 import UIKit
 
-
-
-class signUpViewController: UIViewController {
+class signUpViewControllerPart1: UIViewController {
 
     
     @IBOutlet weak var emailAddress: UITextField!
@@ -22,15 +13,20 @@ class signUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
-
-    @IBAction func validate(_ sender: UIButton) {
-        let user = createUser()
-        print("User created: \n email: \(user.email!) \n password: \(user.password!) \n name: \(user.firstName!) \(user.lastName!) \n birthday: \(user.birthMonth!)/\(user.birthDay!)/\(user.birthYear!)")
+    @IBAction func validate(_ sender: Any) {
+        let user = buildUser()
     }
     
-    func createUser() -> user {
+    func buildUser() -> userTemplate {
+        let u = userTemplate()
+        u.email = emailAddress.text!
+        u.password = password.text!
+        u.firstName = firstName.text!
+        u.lastName = lastName.text!
+        
         let date = birthdayDatePicker.date
         let dateFormatter = DateFormatter()
         //dateFormatter.dateFormat = "dd-MM-YYYY"
@@ -41,10 +37,17 @@ class signUpViewController: UIViewController {
         dateFormatter.dateFormat = "dd"
         let birthdayDay = Int(dateFormatter.string(from: date))
         
-        let u = user(email:emailAddress.text!, password: password.text!, firstName: firstName.text!, lastName: lastName.text!, birthMonth: birthdayMonth!, birthDay: birthdayDay!, birthYear: birthdayYear!)
+        let date_obj = Date()
+        let calendar = Calendar.current
+        let year = calendar.component(.year, from: date_obj)
+        print(year)
+        
+        u.birthMonth = birthdayMonth!
+        u.birthDay = birthdayDay!
+        u.birthYear = birthdayYear!
+        
         
         return u
     }
-    
     
 }

@@ -68,7 +68,7 @@
                                     <color key="titleColor" red="0.88649219270000001" green="0.49325019120000002" blue="0.29012829070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4ZI-Q9-Ee8" kind="show" id="gWR-dl-jsl"/>
+                                    <segue destination="4ZI-Q9-Ee8" kind="show" id="l2N-QW-MeK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,7 +84,7 @@
         <!--Sign Up-->
         <scene sceneID="hxY-Xj-Rd0">
             <objects>
-                <viewController id="4ZI-Q9-Ee8" customClass="signUpViewController" customModule="Olacare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4ZI-Q9-Ee8" customClass="signUpViewControllerPart1" customModule="Olacare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ue0-Z2-sfB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,14 +160,15 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGM-A0-J0f">
-                                <rect key="frame" x="157" y="606" width="61" height="35"/>
+                                <rect key="frame" x="167" y="607" width="43" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Submit">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="RG4-pC-2au"/>
+                                    <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="auE-9K-V7D"/>
+                                    <segue destination="E6i-q2-LhG" kind="show" id="3Dy-Qw-Umv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,17 +178,74 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="146-YA-9R7"/>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
                     <connections>
-                        <outlet property="birthdayDatePicker" destination="BJ8-Au-Lg5" id="UlL-6I-U9b"/>
-                        <outlet property="confirmedEmailAddress" destination="fBy-5c-ybo" id="8us-dG-N4l"/>
-                        <outlet property="emailAddress" destination="LH7-fs-jYW" id="SH8-6q-KKB"/>
-                        <outlet property="firstName" destination="xf8-eG-R0m" id="GQR-d7-8Vx"/>
-                        <outlet property="lastName" destination="wjz-xP-5Od" id="HLm-C8-DCd"/>
-                        <outlet property="password" destination="n0I-cd-lpW" id="EJu-1f-Qxy"/>
+                        <outlet property="birthdayDatePicker" destination="BJ8-Au-Lg5" id="p12-yg-48M"/>
+                        <outlet property="confirmedEmailAddress" destination="fBy-5c-ybo" id="20e-mM-xyq"/>
+                        <outlet property="emailAddress" destination="LH7-fs-jYW" id="0B3-vW-1sb"/>
+                        <outlet property="firstName" destination="xf8-eG-R0m" id="WRl-Tx-jRf"/>
+                        <outlet property="lastName" destination="wjz-xP-5Od" id="c9W-tK-Hdf"/>
+                        <outlet property="password" destination="n0I-cd-lpW" id="awa-B0-f2N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7o-KZ-o9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="608"/>
+            <point key="canvasLocation" x="2865" y="608"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oHU-6S-EEF">
+            <objects>
+                <viewController id="E6i-q2-LhG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRs-eW-PkS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYJ-j8-gBa">
+                                <rect key="frame" x="167" y="608" width="43" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="RnH-Gu-u3n"/>
+                                    <segue destination="IxI-ks-WXV" kind="show" id="hQl-0P-4uP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K2d-Ze-5Wb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1V9-7S-Vgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3818" y="608"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YY1-ga-srk">
+            <objects>
+                <viewController id="IxI-ks-WXV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6BP-5H-IfT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdb-vc-vdC">
+                                <rect key="frame" x="156" y="608" width="66" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="INk-rz-w7n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="swc-SZ-rHZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4N-R8-ouf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4975" y="608"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="APZ-bY-SSB">
