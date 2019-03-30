@@ -52,7 +52,6 @@ class signUpViewControllerPart1: UIViewController {
         return u
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "secondSignUpWindow" {
             validate()

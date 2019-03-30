@@ -8,7 +8,6 @@ class signUpViewControllerPart2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //printUser()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

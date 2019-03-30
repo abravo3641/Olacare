@@ -14,12 +14,14 @@ class signUpViewControllerPart4: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        printUser()
     }
     
     func printUser() {
         print("\nUser created: \n   email = \(user.email) \n   password: \(user.password) \n   name: \(user.firstName) \(user.lastName) \n   birthday: \(user.birthMonth)/\(user.birthDay)/\(user.birthYear) \n   Age: \(user.age)")
     }
     
-
+    @IBAction func submitClicked(_ sender: Any) {
+        printUser()
+    }
+    
 }
