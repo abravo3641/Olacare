@@ -12,7 +12,9 @@
 		495434142245AD6E00C32656 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495434132245AD6E00C32656 /* user.swift */; };
 		495434162245AF5F00C32656 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495434152245AF5F00C32656 /* LoginViewController.swift */; };
 		4994E4B7224D339000CC8E1D /* signUpViewControllerPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4B6224D339000CC8E1D /* signUpViewControllerPart1.swift */; };
-		4994E4BB224ECE8100CC8E1D /* testingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4BA224ECE8100CC8E1D /* testingViewController.swift */; };
+		4994E4BD224ED65400CC8E1D /* signUpViewControllerPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4BC224ED65400CC8E1D /* signUpViewControllerPart2.swift */; };
+		4994E4BF224EEB9900CC8E1D /* signUpViewControllerPart3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */; };
+		4994E4C1224EEBC000CC8E1D /* signUpViewControllerPart4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */; };
 		49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C619CC22442B3C003FA1E5 /* AppDelegate.swift */; };
 		49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D022442B3C003FA1E5 /* Main.storyboard */; };
 		49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D322442B3E003FA1E5 /* Assets.xcassets */; };
@@ -25,7 +27,9 @@
 		495434132245AD6E00C32656 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		495434152245AF5F00C32656 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4994E4B6224D339000CC8E1D /* signUpViewControllerPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart1.swift; sourceTree = "<group>"; };
-		4994E4BA224ECE8100CC8E1D /* testingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingViewController.swift; sourceTree = "<group>"; };
+		4994E4BC224ED65400CC8E1D /* signUpViewControllerPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart2.swift; sourceTree = "<group>"; };
+		4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart3.swift; sourceTree = "<group>"; };
+		4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart4.swift; sourceTree = "<group>"; };
 		49C619C922442B3C003FA1E5 /* Olacare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olacare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C619CC22442B3C003FA1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C619D122442B3C003FA1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				4994E4B6224D339000CC8E1D /* signUpViewControllerPart1.swift */,
-				4994E4BA224ECE8100CC8E1D /* testingViewController.swift */,
+				4994E4BC224ED65400CC8E1D /* signUpViewControllerPart2.swift */,
+				4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */,
+				4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */,
 			);
 			path = signUpVC;
 			sourceTree = "<group>";
@@ -235,11 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4994E4BB224ECE8100CC8E1D /* testingViewController.swift in Sources */,
+				4994E4BD224ED65400CC8E1D /* signUpViewControllerPart2.swift in Sources */,
 				495434162245AF5F00C32656 /* LoginViewController.swift in Sources */,
 				49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */,
 				4994E4B7224D339000CC8E1D /* signUpViewControllerPart1.swift in Sources */,
 				495434142245AD6E00C32656 /* user.swift in Sources */,
+				4994E4C1224EEBC000CC8E1D /* signUpViewControllerPart4.swift in Sources */,
+				4994E4BF224EEB9900CC8E1D /* signUpViewControllerPart3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

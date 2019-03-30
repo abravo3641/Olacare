@@ -68,7 +68,7 @@
                                     <color key="titleColor" red="0.88649219270000001" green="0.49325019120000002" blue="0.29012829070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4ZI-Q9-Ee8" kind="show" id="l2N-QW-MeK"/>
+                                    <segue destination="4ZI-Q9-Ee8" kind="show" identifier="" id="l2N-QW-MeK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -167,8 +167,7 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="auE-9K-V7D"/>
-                                    <segue destination="E6i-q2-LhG" kind="show" id="3Dy-Qw-Umv"/>
+                                    <segue destination="E6i-q2-LhG" kind="show" identifier="secondSignUpWindow" id="3Dy-Qw-Umv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -190,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="2865" y="608"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller Part2-->
         <scene sceneID="oHU-6S-EEF">
             <objects>
-                <viewController id="E6i-q2-LhG" sceneMemberID="viewController">
+                <viewController id="E6i-q2-LhG" customClass="signUpViewControllerPart2" customModule="Olacare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hRs-eW-PkS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,7 +206,7 @@
                                 </state>
                                 <connections>
                                     <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="RnH-Gu-u3n"/>
-                                    <segue destination="IxI-ks-WXV" kind="show" id="hQl-0P-4uP"/>
+                                    <segue destination="IxI-ks-WXV" kind="show" identifier="thirdSignUpWindow" id="hQl-0P-4uP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -217,25 +216,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V9-7S-Vgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3818" y="608"/>
+            <point key="canvasLocation" x="3919" y="608"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller Part3-->
         <scene sceneID="YY1-ga-srk">
             <objects>
-                <viewController id="IxI-ks-WXV" sceneMemberID="viewController">
+                <viewController id="IxI-ks-WXV" customClass="signUpViewControllerPart3" customModule="Olacare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6BP-5H-IfT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdb-vc-vdC">
-                                <rect key="frame" x="156" y="608" width="66" height="35"/>
+                                <rect key="frame" x="168" y="608" width="43" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="INk-rz-w7n"/>
+                                    <segue destination="VHL-mv-dub" kind="show" identifier="fourthSignUpWindow" id="gv5-2M-918"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -246,6 +246,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4N-R8-ouf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4975" y="608"/>
+        </scene>
+        <!--Sign Up View Controller Part4-->
+        <scene sceneID="4x5-EN-R8D">
+            <objects>
+                <viewController id="VHL-mv-dub" customClass="signUpViewControllerPart4" customModule="Olacare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Njr-QV-Xp9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-N7-QOB">
+                                <rect key="frame" x="157" y="608" width="66" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="validate:" destination="4ZI-Q9-Ee8" eventType="touchUpInside" id="iYD-D8-1IZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jLN-Yt-UGq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdm-Qq-nD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5993" y="608"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="APZ-bY-SSB">

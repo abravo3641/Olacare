@@ -11,13 +11,16 @@ class signUpViewControllerPart1: UIViewController {
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var birthdayDatePicker: UIDatePicker!
     
+    var user:userTemplate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    @IBAction func validate(_ sender: Any) {
-        let user = buildUser()
+    func validate() {
+        //To do: Validate
+        user = buildUser()
     }
     
     func buildUser() -> userTemplate {
@@ -40,14 +43,22 @@ class signUpViewControllerPart1: UIViewController {
         let date_obj = Date()
         let calendar = Calendar.current
         let year = calendar.component(.year, from: date_obj)
-        print(year)
+        let age = year - birthdayYear!
         
         u.birthMonth = birthdayMonth!
         u.birthDay = birthdayDay!
         u.birthYear = birthdayYear!
-        
-        
+        u.age = age
         return u
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "secondSignUpWindow" {
+            validate()
+            let secondSingUpVC = segue.destination as! signUpViewControllerPart2
+            secondSingUpVC.user = user
+        }
     }
     
 }
