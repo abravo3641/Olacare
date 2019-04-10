@@ -1,12 +1,5 @@
-//
-//  signUpViewControllerPart4.swift
-//  Olacare
-//
-//  Created by Anthony Bravo on 3/29/19.
-//  Copyright © 2019 Anthony Bravo. All rights reserved.
-//
-
 import UIKit
+import Firebase
 
 class signUpViewControllerPart4: UIViewController {
 
@@ -22,6 +15,27 @@ class signUpViewControllerPart4: UIViewController {
     
     @IBAction func submitClicked(_ sender: Any) {
         printUser()
+        createUserInDatabase(user: user)
     }
     
+    func createUserInDatabase(user:userTemplate) {
+        Auth.auth().createUser(withEmail: user.email, password: user.password) { (result, error) in
+            if error != nil {
+                print("Error Creating User: ", error?.localizedDescription as Any)
+            }
+            else {
+                //Create user values on Database
+                let uid = result?.user.uid
+                let values = ["email":user.email, "password":user.password, "firstName":user.firstName, "lastName":user.lastName, "birthMonth":user.birthMonth, "birthDay":user.birthDay, "birthYear":user.birthYear, "age":user.age] as [String : Any]
+                Database.database().reference().child("users").child(uid!).updateChildValues(values, withCompletionBlock: { (error, ref) in
+                    if error != nil {
+                        print("Error Creating User", error?.localizedDescription as Any)
+                    }
+                    else {
+                        print("Succesfully created user on the Database!")
+                    }
+                })
+            }
+        }
+    }
 }
