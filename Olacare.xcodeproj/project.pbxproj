@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0DFEA0922E068B50E9054CF5 /* Pods_Olacare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B23C920B6A9230827CB65F /* Pods_Olacare.framework */; };
+		492FAB59226B897100254974 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FAB58226B897100254974 /* LoginNavigationController.swift */; };
 		4954341222445C3200C32656 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4954341122445C3200C32656 /* GoogleService-Info.plist */; };
 		495434142245AD6E00C32656 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495434132245AD6E00C32656 /* user.swift */; };
 		495434162245AF5F00C32656 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495434152245AF5F00C32656 /* LoginViewController.swift */; };
+		495B8A7C226C30CD00F1049B /* testingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495B8A7B226C30CD00F1049B /* testingNavigationController.swift */; };
+		495E824E226C3BDE00DCE53A /* PrEPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E824D226C3BDE00DCE53A /* PrEPViewController.swift */; };
+		495E8252226C546100DCE53A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E8251226C546100DCE53A /* Storyboard.storyboard */; };
+		495E8254226C54F900DCE53A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E8253226C54F900DCE53A /* LaunchViewController.swift */; };
+		495E8256226CCD4700DCE53A /* insuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E8255226CCD4700DCE53A /* insuranceViewController.swift */; };
+		498E823E226BDED500C4DFD6 /* signUpViewControllerPart5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E823D226BDED500C4DFD6 /* signUpViewControllerPart5.swift */; };
+		498E8240226C0EE300C4DFD6 /* signUpViewControllerPart6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E823F226C0EE300C4DFD6 /* signUpViewControllerPart6.swift */; };
 		4994E4B7224D339000CC8E1D /* signUpViewControllerPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4B6224D339000CC8E1D /* signUpViewControllerPart1.swift */; };
 		4994E4BD224ED65400CC8E1D /* signUpViewControllerPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4BC224ED65400CC8E1D /* signUpViewControllerPart2.swift */; };
 		4994E4BF224EEB9900CC8E1D /* signUpViewControllerPart3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */; };
 		4994E4C1224EEBC000CC8E1D /* signUpViewControllerPart4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */; };
+		499B9F8D226162B700BC5EF4 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B9F8C226162B700BC5EF4 /* homeViewController.swift */; };
 		49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C619CC22442B3C003FA1E5 /* AppDelegate.swift */; };
 		49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D022442B3C003FA1E5 /* Main.storyboard */; };
 		49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D322442B3E003FA1E5 /* Assets.xcassets */; };
@@ -23,13 +32,22 @@
 
 /* Begin PBXFileReference section */
 		0BB1E18B9F5D437D67A85188 /* Pods-Olacare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olacare.release.xcconfig"; path = "Target Support Files/Pods-Olacare/Pods-Olacare.release.xcconfig"; sourceTree = "<group>"; };
+		492FAB58226B897100254974 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		4954341122445C3200C32656 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		495434132245AD6E00C32656 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		495434152245AF5F00C32656 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		495B8A7B226C30CD00F1049B /* testingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingNavigationController.swift; sourceTree = "<group>"; };
+		495E824D226C3BDE00DCE53A /* PrEPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrEPViewController.swift; sourceTree = "<group>"; };
+		495E8251226C546100DCE53A /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		495E8253226C54F900DCE53A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		495E8255226CCD4700DCE53A /* insuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insuranceViewController.swift; sourceTree = "<group>"; };
+		498E823D226BDED500C4DFD6 /* signUpViewControllerPart5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart5.swift; sourceTree = "<group>"; };
+		498E823F226C0EE300C4DFD6 /* signUpViewControllerPart6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart6.swift; sourceTree = "<group>"; };
 		4994E4B6224D339000CC8E1D /* signUpViewControllerPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart1.swift; sourceTree = "<group>"; };
 		4994E4BC224ED65400CC8E1D /* signUpViewControllerPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart2.swift; sourceTree = "<group>"; };
 		4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart3.swift; sourceTree = "<group>"; };
 		4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart4.swift; sourceTree = "<group>"; };
+		499B9F8C226162B700BC5EF4 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		49C619C922442B3C003FA1E5 /* Olacare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olacare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C619CC22442B3C003FA1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C619D122442B3C003FA1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		495E824C226C3BAE00DCE53A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				495E824D226C3BDE00DCE53A /* PrEPViewController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4994E4B5224D331800CC8E1D /* signUpVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +85,9 @@
 				4994E4BC224ED65400CC8E1D /* signUpViewControllerPart2.swift */,
 				4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */,
 				4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */,
+				498E823D226BDED500C4DFD6 /* signUpViewControllerPart5.swift */,
+				498E823F226C0EE300C4DFD6 /* signUpViewControllerPart6.swift */,
+				495E8255226CCD4700DCE53A /* insuranceViewController.swift */,
 			);
 			path = signUpVC;
 			sourceTree = "<group>";
@@ -87,10 +116,16 @@
 				49C619CC22442B3C003FA1E5 /* AppDelegate.swift */,
 				495434132245AD6E00C32656 /* user.swift */,
 				495434152245AF5F00C32656 /* LoginViewController.swift */,
+				499B9F8C226162B700BC5EF4 /* homeViewController.swift */,
+				492FAB58226B897100254974 /* LoginNavigationController.swift */,
+				495B8A7B226C30CD00F1049B /* testingNavigationController.swift */,
+				495E824C226C3BAE00DCE53A /* Services */,
 				4994E4B5224D331800CC8E1D /* signUpVC */,
 				49C619D022442B3C003FA1E5 /* Main.storyboard */,
 				49C619D322442B3E003FA1E5 /* Assets.xcassets */,
 				49C619D522442B3E003FA1E5 /* LaunchScreen.storyboard */,
+				495E8251226C546100DCE53A /* Storyboard.storyboard */,
+				495E8253226C54F900DCE53A /* LaunchViewController.swift */,
 				49C619D822442B3E003FA1E5 /* Info.plist */,
 				4954341122445C3200C32656 /* GoogleService-Info.plist */,
 			);
@@ -178,6 +213,7 @@
 				4954341222445C3200C32656 /* GoogleService-Info.plist in Resources */,
 				49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */,
 				49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */,
+				495E8252226C546100DCE53A /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +254,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -228,6 +265,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -246,9 +284,17 @@
 				4994E4BD224ED65400CC8E1D /* signUpViewControllerPart2.swift in Sources */,
 				495434162245AF5F00C32656 /* LoginViewController.swift in Sources */,
 				49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */,
+				499B9F8D226162B700BC5EF4 /* homeViewController.swift in Sources */,
+				498E8240226C0EE300C4DFD6 /* signUpViewControllerPart6.swift in Sources */,
+				495E8254226C54F900DCE53A /* LaunchViewController.swift in Sources */,
 				4994E4B7224D339000CC8E1D /* signUpViewControllerPart1.swift in Sources */,
 				495434142245AD6E00C32656 /* user.swift in Sources */,
 				4994E4C1224EEBC000CC8E1D /* signUpViewControllerPart4.swift in Sources */,
+				495E8256226CCD4700DCE53A /* insuranceViewController.swift in Sources */,
+				498E823E226BDED500C4DFD6 /* signUpViewControllerPart5.swift in Sources */,
+				492FAB59226B897100254974 /* LoginNavigationController.swift in Sources */,
+				495E824E226C3BDE00DCE53A /* PrEPViewController.swift in Sources */,
+				495B8A7C226C30CD00F1049B /* testingNavigationController.swift in Sources */,
 				4994E4BF224EEB9900CC8E1D /* signUpViewControllerPart3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,8 +5,8 @@ class signUpViewControllerPart1: UIViewController {
 
     
     @IBOutlet weak var emailAddress: UITextField!
-    @IBOutlet weak var confirmedEmailAddress: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var confirmedPassword: UITextField!
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var birthdayDatePicker: UIDatePicker!
@@ -58,6 +58,11 @@ class signUpViewControllerPart1: UIViewController {
             let secondSingUpVC = segue.destination as! signUpViewControllerPart2
             secondSingUpVC.user = user
         }
+    }
+    
+    
+    @IBAction func onClick(_ sender: Any) {
+        view.endEditing(true)
     }
     
 }

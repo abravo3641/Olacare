@@ -9,6 +9,8 @@ target 'Olacare' do
     pod 'Alamofire'
     pod 'Firebase/Core'
     pod 'Firebase/Database'
-    pod 'Firebase/Auth'
+    pod 'Firebase/Auth'	
+    pod 'M13Checkbox'
+
 
 end
