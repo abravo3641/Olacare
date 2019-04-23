@@ -40,6 +40,7 @@ class signUpViewControllerPart5: UIViewController {
         createUserInDatabase(user: user)
         
     }
+
     
     func saveSexualOrientation() {
         let keys:[String] = ["gay","lesbian","bisexual","pansexual","queer","polysexual"]

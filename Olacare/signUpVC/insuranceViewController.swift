@@ -16,10 +16,11 @@ class insuranceViewController: UIViewController {
     
     @IBOutlet weak var insuranceName: UITextField!
     @IBOutlet weak var insuranceID: UITextField!
-    
+    @IBOutlet weak var skipLoginButton: UIButton!
+    @IBOutlet weak var submitButtom: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateUI()
     }
     
 
@@ -71,5 +72,10 @@ class insuranceViewController: UIViewController {
             let homeVC = testingNavigation.children[0] as! homeViewController
             homeVC.user = user
         }
+    }
+    
+    func updateUI() {
+        skipLoginButton.layer.cornerRadius = 10
+        submitButtom.layer.cornerRadius = 10
     }
 }

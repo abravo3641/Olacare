@@ -6,6 +6,7 @@ class homeViewController: UIViewController {
     
     var user:userTemplate!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var seeDoctorsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +20,15 @@ class homeViewController: UIViewController {
         present(loggingVc, animated: true, completion: nil)
     }
     
+    @IBAction func seeDoctorsPressed(_ sender: Any) {
+    }
+    
     func updateUI() {
         nameLabel.text = user.firstName
-        
+        seeDoctorsButton.layer.cornerRadius = 10
     }
+    
+    
     
 
 }
