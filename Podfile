@@ -11,6 +11,8 @@ target 'Olacare' do
     pod 'Firebase/Database'
     pod 'Firebase/Auth'	
     pod 'M13Checkbox'
+    pod 'SwiftyStarRatingView'
+    pod 'AlamofireImage', '~> 3.3'
 
 
 end

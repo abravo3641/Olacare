@@ -10,7 +10,6 @@ import Foundation
 
 class doctorTemplate {
     var uid:Int = 0 //Index on all field
-    var allIndex:Int = 0 //the last index on all field
     var firstName:String = ""
     var lastName:String = ""
     var age:Int = 0
@@ -20,6 +19,6 @@ class doctorTemplate {
     var sex:String = ""
     var rating:Double = 0.0
     var verified:Bool = false
-    var validInsurances:[String:Any] = [:]
-    var servicesSpecialties:[String:Any] = [:]
+    var validInsurances:[String] = []
+    var servicesSpecialties:[String] = []
 }

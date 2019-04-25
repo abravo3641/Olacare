@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.8.1)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
   - Firebase/Auth (5.15.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.2.0)
@@ -68,17 +70,21 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - SwiftyStarRatingView (1.0.4)
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage (~> 3.3)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - M13Checkbox
+  - SwiftyStarRatingView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AlamofireImage
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -92,9 +98,11 @@ SPEC REPOS:
     - leveldb-library
     - M13Checkbox
     - nanopb
+    - SwiftyStarRatingView
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
   FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
   FirebaseAuth: 02e969ff430e156d99d4cb842d77b806b71ad7bb
@@ -108,7 +116,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   M13Checkbox: d75dca81d61c9903e7f091f32b35a3254bc97dce
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SwiftyStarRatingView: a2b0057700e0adeb8e7442c55d99cb53b531d2f4
 
-PODFILE CHECKSUM: 41195932f5ca6aefe5fbfd5c767907fa73b3c537
+PODFILE CHECKSUM: 346fd12d7cc5b97e43bc3298799d887dddbc2127
 
 COCOAPODS: 1.6.0.beta.2

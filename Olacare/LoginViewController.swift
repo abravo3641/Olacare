@@ -51,6 +51,8 @@ class LoginViewController: UIViewController {
             for field in DataSnapshot.children.allObjects as! [DataSnapshot] {
                 //Filling right key to make user
                 switch field.key {
+                    case "uid":
+                        createdUser.uid = field.value! as! String
                     case "email":
                         createdUser.email = field.value! as! String
                     case "password":
@@ -79,6 +81,10 @@ class LoginViewController: UIViewController {
                         createdUser.sexualOrientationValues = field.value as! [String:Any]
                     case "transitioned":
                         createdUser.transitioned = field.value! as! String
+                    case "insuranceName":
+                        createdUser.insuranceName = field.value! as! String
+                    case "insuranceID":
+                        createdUser.insuranceID = field.value! as! String
                     default:
                         print("Key not found! \(field.key)")
                 }
@@ -106,16 +112,12 @@ class LoginViewController: UIViewController {
         let doctor = createDoctor()
         //Only run once our index issue has been solved
         group.notify(queue: .main) {
-            let values = ["firstName":doctor.firstName, "lastName":doctor.lastName, "age":doctor.age, "sex":doctor.sex, "phoneNumber":doctor.phoneNumber, "address":doctor.address, "profileImg":doctor.profileImg, "rating":doctor.rating, "verified":doctor.verified, "uid":doctor.uid] as [String : Any]
+            let values = ["firstName":doctor.firstName, "lastName":doctor.lastName, "age":doctor.age, "sex":doctor.sex, "phoneNumber":doctor.phoneNumber, "address":doctor.address, "profileImg":doctor.profileImg, "rating":doctor.rating, "verified":doctor.verified, "uid":doctor.uid, "validInsurances":doctor.validInsurances, "servicesSpecialties":doctor.servicesSpecialties ] as [String : Any]
             
             //Putting doctors on all field on Database
             self.ref.child("doctors").child("all").child(String(doctor.uid)).updateChildValues(values)
             
-            //Inserting inner values for doctor
-            self.ref.child("doctors").child("all").child(String(doctor.uid)).child("validInsurance").updateChildValues(doctor.validInsurances)
-            self.ref.child("doctors").child("all").child(String(doctor.uid)).child("servicesSpecialties").updateChildValues(doctor.servicesSpecialties)
 
-            
             //Putting doctors on their corresponding Database field
             //self.ref.child("doctors").child(type).child(String(doctor.uid)).updateChildValues(values)
         }
@@ -128,16 +130,16 @@ class LoginViewController: UIViewController {
 //----------------------------------------------------------------------------------------------
 //-----------------------Modifify from here for onboarding doctor-------------------------------
 //----------------------------------------------------------------------------------------------
-        doctor.firstName = "Anthony"
-        doctor.lastName = "Bravo"
-        doctor.age = 49
-        doctor.phoneNumber = "123456789"
+        doctor.firstName = "Henry"
+        doctor.lastName = "Peter"
+        doctor.age = 28
+        doctor.phoneNumber = "430432040"
         doctor.address = "123 waterhouse 65th ave"
         doctor.profileImg = "https://i.imgur.com/W2BwpVk.png"
-        doctor.sex = "male"
-        doctor.verified = false
-        doctor.validInsurances = ["Metroplus":true,"healthFirst":true]
-        doctor.servicesSpecialties = ["PrEP":true, "PEP":true, ]
+        doctor.sex = "Female"
+        doctor.verified = true
+        doctor.validInsurances = ["Humana","Well Care"]
+        doctor.servicesSpecialties = ["FTM", "Urologist"]
 //-----------------------------------------------------------------------------------------------
 //------------------------End--------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------

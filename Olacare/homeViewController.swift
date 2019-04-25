@@ -10,7 +10,7 @@ class homeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        user.printUser()
+        //user.printUser()
         updateUI()
     }
     
