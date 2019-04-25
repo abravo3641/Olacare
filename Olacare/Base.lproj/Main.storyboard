@@ -466,6 +466,7 @@
                                             <outlet property="rainbowStampImageView" destination="G80-9t-s9A" id="K7I-xo-cjm"/>
                                             <outlet property="specialtiesLabel" destination="npH-GC-b8t" id="B0g-YZ-VjS"/>
                                             <outlet property="starRatingView" destination="FNo-Ip-D84" id="a54-2h-Vh4"/>
+                                            <segue destination="p9y-0e-AgY" kind="show" identifier="doctorMoreInfo" id="SxQ-Ou-VMI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -496,6 +497,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZv-Dk-nu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4972" y="-99.400299850074973"/>
+        </scene>
+        <!--Doctor Info-->
+        <scene sceneID="wM9-Aw-Cs9">
+            <objects>
+                <viewController id="p9y-0e-AgY" customClass="moreInfoDoctorViewController" customModule="Olacare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PUS-Qh-BGk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qN-0U-E84">
+                                <rect key="frame" x="35" y="81" width="305" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sv3-J7-juS">
+                                <rect key="frame" x="67" y="188" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="u71-gv-bCx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Doctor Info" id="1Ld-Cm-QCG"/>
+                    <connections>
+                        <outlet property="doctorImageView" destination="sv3-J7-juS" id="WXn-gO-ubi"/>
+                        <outlet property="doctorNameLabel" destination="8qN-0U-E84" id="GgM-sV-rRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CvN-Sq-bcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6068" y="-99.400299850074973"/>
         </scene>
         <!--PrEP-->
         <scene sceneID="ii9-zE-2DY">

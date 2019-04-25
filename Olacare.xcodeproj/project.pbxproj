@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0DFEA0922E068B50E9054CF5 /* Pods_Olacare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B23C920B6A9230827CB65F /* Pods_Olacare.framework */; };
 		492FAB59226B897100254974 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FAB58226B897100254974 /* LoginNavigationController.swift */; };
+		49419F92227212DB006CA137 /* moreInfoDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49419F91227212DB006CA137 /* moreInfoDoctorViewController.swift */; };
 		4949B52D226D697E009F6EBC /* allDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4949B52C226D697E009F6EBC /* allDoctorsViewController.swift */; };
 		4949B531226D931B009F6EBC /* doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4949B530226D931B009F6EBC /* doctor.swift */; };
 		4949B533226F8688009F6EBC /* doctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4949B532226F8688009F6EBC /* doctorTableViewCell.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		0BB1E18B9F5D437D67A85188 /* Pods-Olacare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olacare.release.xcconfig"; path = "Target Support Files/Pods-Olacare/Pods-Olacare.release.xcconfig"; sourceTree = "<group>"; };
 		492FAB58226B897100254974 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		49419F91227212DB006CA137 /* moreInfoDoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreInfoDoctorViewController.swift; sourceTree = "<group>"; };
 		4949B52C226D697E009F6EBC /* allDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allDoctorsViewController.swift; sourceTree = "<group>"; };
 		4949B530226D931B009F6EBC /* doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doctor.swift; sourceTree = "<group>"; };
 		4949B532226F8688009F6EBC /* doctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doctorTableViewCell.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				495E824D226C3BDE00DCE53A /* PrEPViewController.swift */,
 				4949B52C226D697E009F6EBC /* allDoctorsViewController.swift */,
 				4949B532226F8688009F6EBC /* doctorTableViewCell.swift */,
+				49419F91227212DB006CA137 /* moreInfoDoctorViewController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			files = (
 				4994E4BD224ED65400CC8E1D /* signUpViewControllerPart2.swift in Sources */,
 				495434162245AF5F00C32656 /* LoginViewController.swift in Sources */,
+				49419F92227212DB006CA137 /* moreInfoDoctorViewController.swift in Sources */,
 				49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */,
 				4949B531226D931B009F6EBC /* doctor.swift in Sources */,
 				4949B533226F8688009F6EBC /* doctorTableViewCell.swift in Sources */,

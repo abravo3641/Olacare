@@ -135,7 +135,7 @@ class allDoctorsViewController: UIViewController, UITableViewDataSource, UITable
             let doctor = doctors[indexPath.row]
             //Name
             cell.nameLabel.text = "\(doctor.firstName) \(doctor.lastName)"
-            //Profile Pid
+            //Profile image
             let doctoUrl = URL(string: doctor.profileImg)!
             cell.profileImageView.af_setImage(withURL: doctoUrl)
             //Specialities: displaying the first 2
@@ -152,6 +152,22 @@ class allDoctorsViewController: UIViewController, UITableViewDataSource, UITable
             cell.addressLabel.text = doctor.address
         }
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "doctorMoreInfo" {
+            let moreInfoVC = segue.destination as! moreInfoDoctorViewController
+            let cell = sender as! UITableViewCell
+            let indexPath = allDoctorsTableView.indexPath(for: cell)
+            let index = (indexPath?.row)!
+            let doctor = doctors[index]
+            moreInfoVC.doctor = doctor
+        }
+    }
+    
+    //Removes gray region of selected cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
