@@ -21,6 +21,11 @@
 		495E8252226C546100DCE53A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E8251226C546100DCE53A /* Storyboard.storyboard */; };
 		495E8254226C54F900DCE53A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E8253226C54F900DCE53A /* LaunchViewController.swift */; };
 		495E8256226CCD4700DCE53A /* insuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E8255226CCD4700DCE53A /* insuranceViewController.swift */; };
+		4979B2F92273A8CC003CEB60 /* Comfortaa[wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4979B2F82273A8CC003CEB60 /* Comfortaa[wght].ttf */; };
+		4979B2FE2273A8D8003CEB60 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4979B2FA2273A8D8003CEB60 /* Signika-Regular.ttf */; };
+		4979B2FF2273A8D8003CEB60 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4979B2FB2273A8D8003CEB60 /* Signika-Bold.ttf */; };
+		4979B3002273A8D8003CEB60 /* Signika-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4979B2FC2273A8D8003CEB60 /* Signika-Light.ttf */; };
+		4979B3012273A8D8003CEB60 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4979B2FD2273A8D8003CEB60 /* Signika-SemiBold.ttf */; };
 		498E823E226BDED500C4DFD6 /* signUpViewControllerPart5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E823D226BDED500C4DFD6 /* signUpViewControllerPart5.swift */; };
 		498E8240226C0EE300C4DFD6 /* signUpViewControllerPart6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E823F226C0EE300C4DFD6 /* signUpViewControllerPart6.swift */; };
 		4994E4B7224D339000CC8E1D /* signUpViewControllerPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4B6224D339000CC8E1D /* signUpViewControllerPart1.swift */; };
@@ -49,6 +54,11 @@
 		495E8251226C546100DCE53A /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		495E8253226C54F900DCE53A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		495E8255226CCD4700DCE53A /* insuranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insuranceViewController.swift; sourceTree = "<group>"; };
+		4979B2F82273A8CC003CEB60 /* Comfortaa[wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa[wght].ttf"; sourceTree = "<group>"; };
+		4979B2FA2273A8D8003CEB60 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.ttf"; sourceTree = "<group>"; };
+		4979B2FB2273A8D8003CEB60 /* Signika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Bold.ttf"; sourceTree = "<group>"; };
+		4979B2FC2273A8D8003CEB60 /* Signika-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Light.ttf"; sourceTree = "<group>"; };
+		4979B2FD2273A8D8003CEB60 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-SemiBold.ttf"; sourceTree = "<group>"; };
 		498E823D226BDED500C4DFD6 /* signUpViewControllerPart5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart5.swift; sourceTree = "<group>"; };
 		498E823F226C0EE300C4DFD6 /* signUpViewControllerPart6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart6.swift; sourceTree = "<group>"; };
 		4994E4B6224D339000CC8E1D /* signUpViewControllerPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart1.swift; sourceTree = "<group>"; };
@@ -87,6 +97,18 @@
 				49419F91227212DB006CA137 /* moreInfoDoctorViewController.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4979B2F72273A88D003CEB60 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4979B2FB2273A8D8003CEB60 /* Signika-Bold.ttf */,
+				4979B2FC2273A8D8003CEB60 /* Signika-Light.ttf */,
+				4979B2FA2273A8D8003CEB60 /* Signika-Regular.ttf */,
+				4979B2FD2273A8D8003CEB60 /* Signika-SemiBold.ttf */,
+				4979B2F82273A8CC003CEB60 /* Comfortaa[wght].ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		4994E4B5224D331800CC8E1D /* signUpVC */ = {
@@ -140,6 +162,7 @@
 				495E8253226C54F900DCE53A /* LaunchViewController.swift */,
 				49C619D822442B3E003FA1E5 /* Info.plist */,
 				4954341122445C3200C32656 /* GoogleService-Info.plist */,
+				4979B2F72273A88D003CEB60 /* Fonts */,
 			);
 			path = Olacare;
 			sourceTree = "<group>";
@@ -221,11 +244,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4979B2FF2273A8D8003CEB60 /* Signika-Bold.ttf in Resources */,
 				49C619D722442B3E003FA1E5 /* LaunchScreen.storyboard in Resources */,
 				4954341222445C3200C32656 /* GoogleService-Info.plist in Resources */,
 				49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */,
 				49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */,
+				4979B3002273A8D8003CEB60 /* Signika-Light.ttf in Resources */,
+				4979B2FE2273A8D8003CEB60 /* Signika-Regular.ttf in Resources */,
 				495E8252226C546100DCE53A /* Storyboard.storyboard in Resources */,
+				4979B3012273A8D8003CEB60 /* Signika-SemiBold.ttf in Resources */,
+				4979B2F92273A8CC003CEB60 /* Comfortaa[wght].ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
