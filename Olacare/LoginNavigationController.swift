@@ -14,7 +14,7 @@ class LoginNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let colors:[UIColor] = [hexStringToUIColor(hex: "99d5d8"),hexStringToUIColor(hex: "83A4D4")]
+        let colors:[UIColor] = [hexStringToUIColor(hex: "ffffff"),hexStringToUIColor(hex: "dddad7")]
         topNavigationBar.setGradientBackground(colors: colors, startPoint: .bottomLeft, endPoint: .bottomRight)
     }
     
@@ -33,8 +33,10 @@ class LoginNavigationController: UINavigationController {
         var gradientLayer:CAGradientLayer!
         gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.topNavigationBar.bounds
-        let topColor = hexStringToUIColor(hex: "B6FBFF")
-        let bottomColor = hexStringToUIColor(hex: "83A4D4")
+//        let topColor = hexStringToUIColor(hex: "B6FBFF")
+//        let bottomColor = hexStringToUIColor(hex: "83A4D4")
+        let topColor = hexStringToUIColor(hex: "ffffff")
+        let bottomColor = hexStringToUIColor(hex: "dddad7")
         gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
         gradientLayer.startPoint = CGPoint(x:0,y:0)
         gradientLayer.endPoint = CGPoint(x:1,y:1)

@@ -14,10 +14,12 @@ class LoginViewController: UIViewController {
     let group1 = DispatchGroup()
     let ref = Database.database().reference()
     var cycle:Bool = false
+    @IBOutlet weak var navTitle: UINavigationItem!
     
     override func viewDidLoad() {
+        setGradient()
         super.viewDidLoad()
-        //putDoctorOnDatabase(type: "PrEP")
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
     }
     
     
@@ -171,6 +173,41 @@ class LoginViewController: UIViewController {
         //Update the Database
         ref.child("doctors").updateChildValues(values)
         cycle = true
+    }
+    
+    func setGradient() {
+        var gradientLayer:CAGradientLayer!
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        let topColor = hexStringToUIColor(hex: "B6FBFF")
+        let bottomColor = hexStringToUIColor(hex: "83A4D4")
+        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradientLayer.startPoint = CGPoint(x:0,y:0)
+        gradientLayer.endPoint = CGPoint(x:1,y:1)
+        
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
     
 }
