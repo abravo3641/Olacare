@@ -55,18 +55,18 @@ class allDoctorsViewController: UIViewController, UITableViewDataSource, UITable
                                 doctor.firstName = field.value! as! String
                             case "lastName":
                                 doctor.lastName = field.value! as! String
-                            case "age":
-                                doctor.age = field.value! as! Int
+                            case "bio":
+                                doctor.bio = field.value! as! String
                             case "phoneNumber":
                                 doctor.phoneNumber = field.value! as! String
                             case "address":
                                 doctor.address = field.value! as! String
                             case "profileImg":
                                 doctor.profileImg = field.value! as! String
-                            case "sex":
-                                doctor.sex = field.value! as! String
                             case "rating":
                                 doctor.rating = field.value as! Double
+                            case "certification":
+                                doctor.certification = field.value as! String
                             case "verified":
                                 doctor.verified = field.value as! Bool
                             case "validInsurances":

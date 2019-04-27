@@ -112,7 +112,7 @@ class LoginViewController: UIViewController {
         let doctor = createDoctor()
         //Only run once our index issue has been solved
         group.notify(queue: .main) {
-            let values = ["firstName":doctor.firstName, "lastName":doctor.lastName, "age":doctor.age, "sex":doctor.sex, "phoneNumber":doctor.phoneNumber, "address":doctor.address, "profileImg":doctor.profileImg, "rating":doctor.rating, "verified":doctor.verified, "uid":doctor.uid, "validInsurances":doctor.validInsurances, "servicesSpecialties":doctor.servicesSpecialties ] as [String : Any]
+            let values = ["firstName":doctor.firstName, "lastName":doctor.lastName, "bio":doctor.bio, "phoneNumber":doctor.phoneNumber, "address":doctor.address, "profileImg":doctor.profileImg, "rating":doctor.rating, "verified":doctor.verified, "uid":doctor.uid, "validInsurances":doctor.validInsurances, "servicesSpecialties":doctor.servicesSpecialties ] as [String : Any]
             
             //Putting doctors on all field on Database
             self.ref.child("doctors").child("all").child(String(doctor.uid)).updateChildValues(values)
@@ -132,11 +132,11 @@ class LoginViewController: UIViewController {
 //----------------------------------------------------------------------------------------------
         doctor.firstName = "Henry"
         doctor.lastName = "Peter"
-        doctor.age = 28
-        doctor.phoneNumber = "430432040"
+        doctor.bio = "I am really awesome and you should totally come!"
+        doctor.phoneNumber = "430-432-9040"
         doctor.address = "123 waterhouse 65th ave"
         doctor.profileImg = "https://i.imgur.com/W2BwpVk.png"
-        doctor.sex = "Female"
+        doctor.certification = "American Red Cross"
         doctor.verified = true
         doctor.validInsurances = ["Humana","Well Care"]
         doctor.servicesSpecialties = ["FTM", "Urologist"]

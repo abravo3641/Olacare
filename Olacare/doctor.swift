@@ -12,12 +12,12 @@ class doctorTemplate {
     var uid:Int = 0 //Index on all field
     var firstName:String = ""
     var lastName:String = ""
-    var age:Int = 0
+    var bio:String = ""
     var phoneNumber:String = ""
     var address:String = ""
     var profileImg:String = ""
-    var sex:String = ""
     var rating:Double = 0.0
+    var certification:String = ""
     var verified:Bool = false
     var validInsurances:[String] = []
     var servicesSpecialties:[String] = []
