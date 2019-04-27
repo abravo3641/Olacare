@@ -14,7 +14,7 @@ class testingNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let colors:[UIColor] = [hexStringToUIColor(hex: "99d5d8"),hexStringToUIColor(hex: "83A4D4")]
+        let colors:[UIColor] = [hexStringToUIColor(hex: "ffffff"),hexStringToUIColor(hex: "dddad7")]
         topNavigationBar.setGradientBackground(colors: colors, startPoint: .bottomLeft, endPoint: .bottomRight)
     }
     
