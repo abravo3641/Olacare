@@ -33,6 +33,7 @@
 		4994E4BF224EEB9900CC8E1D /* signUpViewControllerPart3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */; };
 		4994E4C1224EEBC000CC8E1D /* signUpViewControllerPart4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */; };
 		499B9F8D226162B700BC5EF4 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B9F8C226162B700BC5EF4 /* homeViewController.swift */; };
+		49B74E0B22761A9C000514F8 /* Comfortaa2[wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49B74E0A22761A9C000514F8 /* Comfortaa2[wght].ttf */; };
 		49C619CD22442B3C003FA1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C619CC22442B3C003FA1E5 /* AppDelegate.swift */; };
 		49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D022442B3C003FA1E5 /* Main.storyboard */; };
 		49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C619D322442B3E003FA1E5 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		4994E4BE224EEB9900CC8E1D /* signUpViewControllerPart3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart3.swift; sourceTree = "<group>"; };
 		4994E4C0224EEBC000CC8E1D /* signUpViewControllerPart4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewControllerPart4.swift; sourceTree = "<group>"; };
 		499B9F8C226162B700BC5EF4 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		49B74E0A22761A9C000514F8 /* Comfortaa2[wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa2[wght].ttf"; sourceTree = "<group>"; };
 		49C619C922442B3C003FA1E5 /* Olacare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olacare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C619CC22442B3C003FA1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C619D122442B3C003FA1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		4979B2F72273A88D003CEB60 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				49B74E0A22761A9C000514F8 /* Comfortaa2[wght].ttf */,
 				4979B2FB2273A8D8003CEB60 /* Signika-Bold.ttf */,
 				4979B2FC2273A8D8003CEB60 /* Signika-Light.ttf */,
 				4979B2FA2273A8D8003CEB60 /* Signika-Regular.ttf */,
@@ -249,6 +252,7 @@
 				4954341222445C3200C32656 /* GoogleService-Info.plist in Resources */,
 				49C619D422442B3E003FA1E5 /* Assets.xcassets in Resources */,
 				49C619D222442B3C003FA1E5 /* Main.storyboard in Resources */,
+				49B74E0B22761A9C000514F8 /* Comfortaa2[wght].ttf in Resources */,
 				4979B3002273A8D8003CEB60 /* Signika-Light.ttf in Resources */,
 				4979B2FE2273A8D8003CEB60 /* Signika-Regular.ttf in Resources */,
 				495E8252226C546100DCE53A /* Storyboard.storyboard in Resources */,

@@ -11,6 +11,7 @@
 		<string>Signika-Regular.ttf</string>
 		<string>Signika-SemiBold.ttf</string>
 		<string>Comfortaa[wght].ttf</string>
+		<string>Comfortaa2[wght].tff</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

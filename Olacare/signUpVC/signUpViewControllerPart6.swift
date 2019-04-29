@@ -11,6 +11,8 @@ import UIKit
 class signUpViewControllerPart6: UIViewController {
 
     var user:userTemplate!
+    
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var servicesButton: UIButton!
     @IBOutlet weak var insurenceButton: UIButton!
@@ -18,7 +20,6 @@ class signUpViewControllerPart6: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        setGradient()
 
     }
     
@@ -26,6 +27,8 @@ class signUpViewControllerPart6: UIViewController {
         servicesButton.layer.cornerRadius = 10
         insurenceButton.layer.cornerRadius = 5
         nameLabel.text = user.firstName
+        setGradient()
+        setGradientTop()
     }
     
     
@@ -61,6 +64,19 @@ class signUpViewControllerPart6: UIViewController {
         gradientLayer.endPoint = CGPoint(x:1,y:1)
         
         self.view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    func setGradientTop() {
+        var gradientLayer:CAGradientLayer!
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = topView.bounds
+        let topColor = hexStringToUIColor(hex: "ffffff")
+        let bottomColor = hexStringToUIColor(hex: "dddad7")
+        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradientLayer.startPoint = CGPoint(x:0,y:0)
+        gradientLayer.endPoint = CGPoint(x:1,y:1)
+        //self.view.layer.insertSublayer(gradientLayer, at: 0)
+        topView.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     func hexStringToUIColor (hex:String) -> UIColor {

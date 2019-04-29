@@ -18,6 +18,9 @@ class doctorTemplate {
     var profileImg:String = ""
     var rating:Double = 0.0
     var certification:String = ""
+    var education:String = ""
+    var languages:String = ""
+    var insuranceID:String = ""
     var verified:Bool = false
     var validInsurances:[String] = []
     var servicesSpecialties:[String] = []

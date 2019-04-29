@@ -14,6 +14,8 @@ class insuranceViewController: UIViewController {
     var user:userTemplate!
     let group = DispatchGroup()
     
+    
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var insuranceName: UITextField!
     @IBOutlet weak var insuranceID: UITextField!
     @IBOutlet weak var skipLoginButton: UIButton!
@@ -21,7 +23,6 @@ class insuranceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        setGradient()
     }
     
 
@@ -78,6 +79,8 @@ class insuranceViewController: UIViewController {
     func updateUI() {
         skipLoginButton.layer.cornerRadius = 10
         submitButtom.layer.cornerRadius = 10
+        setGradient()
+        setGradientTop()
     }
     func setGradient() {
         var gradientLayer:CAGradientLayer!
@@ -90,6 +93,19 @@ class insuranceViewController: UIViewController {
         gradientLayer.endPoint = CGPoint(x:1,y:1)
         
         self.view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    func setGradientTop() {
+        var gradientLayer:CAGradientLayer!
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = topView.bounds
+        let topColor = hexStringToUIColor(hex: "ffffff")
+        let bottomColor = hexStringToUIColor(hex: "dddad7")
+        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradientLayer.startPoint = CGPoint(x:0,y:0)
+        gradientLayer.endPoint = CGPoint(x:1,y:1)
+        //self.view.layer.insertSublayer(gradientLayer, at: 0)
+        topView.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     func hexStringToUIColor (hex:String) -> UIColor {

@@ -73,6 +73,12 @@ class allDoctorsViewController: UIViewController, UITableViewDataSource, UITable
                                 doctor.validInsurances = field.value as! [String]
                             case "servicesSpecialties":
                                 doctor.servicesSpecialties = field.value as! [String]
+                            case "languages":
+                                doctor.languages = field.value as! String
+                            case "insuranceID":
+                                doctor.insuranceID = field.value as! String
+                            case "education":
+                                doctor.education = field.value as! String
                             default:
                                 print("Key not found!! \(field.key)")
                         }
@@ -150,6 +156,8 @@ class allDoctorsViewController: UIViewController, UITableViewDataSource, UITable
             }
             //Location
             cell.addressLabel.text = doctor.address
+            //Star
+            cell.starRatingView.value = CGFloat(doctor.rating)
         }
         return cell
     }
