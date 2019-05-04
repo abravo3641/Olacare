@@ -116,4 +116,9 @@ class moreInfoDoctorViewController: UIViewController {
         present(loggingVc, animated: true, completion: nil)
     }
     
+    
+    @IBAction func screenClicked(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
 }

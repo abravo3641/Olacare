@@ -505,7 +505,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rainbowStamp" translatesAutoresizingMaskIntoConstraints="NO" id="G80-9t-s9A">
-                                                    <rect key="frame" x="15" y="80" width="101" height="69"/>
+                                                    <rect key="frame" x="12" y="80" width="101" height="69"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -576,10 +576,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rainbowStamp" translatesAutoresizingMaskIntoConstraints="NO" id="s8b-Qf-5qh">
-                                                <rect key="frame" x="127" y="182" width="159" height="87"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <view userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-Vh-SdN" customClass="SwiftyStarRatingView" customModule="SwiftyStarRatingView">
                                                 <rect key="frame" x="57" y="296" width="266" height="54"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -730,6 +726,10 @@
                                                     <segue destination="Cn0-vL-klP" kind="show" id="nNN-3E-ASh"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rainbowStamp" translatesAutoresizingMaskIntoConstraints="NO" id="s8b-Qf-5qh">
+                                                <rect key="frame" x="108" y="179" width="159" height="87"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.90283858776092529" green="0.91057950258255005" blue="0.29896533489227295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2046,7 +2046,11 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.67987478599999995" green="0.85243546390000002" blue="0.96771525439999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="toM-CR-v7h"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xhU-ub-LHW" appends="YES" id="2Ny-V6-JEw"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="insuranceID" destination="63r-5f-f8B" id="Lme-nb-qEk"/>
@@ -2058,13 +2062,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfB-9r-jOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xhU-ub-LHW">
+                    <connections>
+                        <action selector="onClick:" destination="C1y-8A-eC5" id="i9w-h7-f7J"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="8966" y="608"/>
         </scene>
     </scenes>
     <resources>
         <image name="olacarelogo" width="2283" height="645"/>
-        <image name="rainbowStamp" width="895" height="444"/>
+        <image name="rainbowStamp" width="2003" height="2260"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nNN-3E-ASh"/>

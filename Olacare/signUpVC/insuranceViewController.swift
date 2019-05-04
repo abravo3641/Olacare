@@ -129,5 +129,10 @@ class insuranceViewController: UIViewController {
             alpha: CGFloat(1.0)
         )
     }
+    
+    
+    @IBAction func onClick(_ sender: Any) {
+        view.endEditing(true)
+    }
 }
 
